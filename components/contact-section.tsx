@@ -23,68 +23,65 @@ export function ContactSection() {
           </defs>
           <rect width="100%" height="100%" fill="url(#contact-wave-pattern)" />
         </svg>
-    
+      </div>
 
-            {/* Contact Info */}
-            <div className="text-white space-y-6 text-left lg:text-center">
-              <div>
-                <h4 className="text-xl font-semibold mb-2">Información de contacto</h4>
-                <p className="text-white/90 mb-6">
-                  Conéctate con nuestro equipo de diseño y recibe directamente en tu email ofertas, descuentos e
-                  invitaciones especiales.
-                </p>
-              </div>
+      {/* Contact Info */}
+      <div className="text-white space-y-6 text-left lg:text-center">
+        <div>
+          <h4 className="text-xl font-semibold mb-2">Información de contacto</h4>
+          <p className="text-white/90 mb-6">
+            Conéctate con nuestro equipo de diseño y recibe directamente en tu email ofertas, descuentos e
+            invitaciones especiales.
+          </p>
+        </div>
 
-              <div className="space-y-4">
-                <div className="flex items-center lg:justify-center gap-3">
-                  <Phone className="w-5 h-5" />
-                  <a href="tel:+5350073914" className="text-white/90 hover:text-white transition-colors">
-                    +53 50073914
-                  </a>
-                </div>
-
-                <div className="flex items-center lg:justify-center gap-3">
-                  <Mail className="w-5 h-5" />
-                  <a
-                    href="mailto:comercialaimas@gmail.com"
-                    className="text-white/90 hover:text-white transition-colors"
-                  >
-                    comercialaimas@gmail.com
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex justify-center space-x-6 mt-8">
-                <a
-                  href="http://wa.me/+5350073914"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors"
-                  aria-label="WhatsApp"
-                >
-                  <Whatsapp className="w-5 h-5" />
-                </a>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors"
-                  aria-label="LinkedIn"
-                >
-                  <Linkedin className="w-5 h-5" />
-                </a>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors"
-                  aria-label="Instagram"
-                >
-                  <Instagram className="w-5 h-5" />
-                </a>
-              </div>
-            </div>
+        <div className="space-y-4">
+          <div className="flex items-center lg:justify-center gap-3">
+            <Phone className="w-5 h-5" />
+            <a href="tel:+5350073914" className="text-white/90 hover:text-white transition-colors">
+              +53 50073914
+            </a>
           </div>
+
+          <div className="flex items-center lg:justify-center gap-3">
+            <Mail className="w-5 h-5" />
+            <a
+              href="mailto:comercialaimas@gmail.com"
+              className="text-white/90 hover:text-white transition-colors"
+            >
+              comercialaimas@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <div className="flex justify-center space-x-6 mt-8">
+          <a
+            href="http://wa.me/+5350073914"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors"
+            aria-label="WhatsApp"
+          >
+            <Whatsapp className="w-5 h-5" />
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors"
+            aria-label="LinkedIn"
+          >
+            <Linkedin className="w-5 h-5" />
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors"
+            aria-label="Instagram"
+          >
+            <Instagram className="w-5 h-5" />
+          </a>
         </div>
       </div>
     </section>

@@ -23,54 +23,7 @@ export function ContactSection() {
           </defs>
           <rect width="100%" height="100%" fill="url(#contact-wave-pattern)" />
         </svg>
-      </div>
-
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Comencemos a trabajar juntos</h2>
-          <h3 className="text-xl sm:text-2xl text-white/90 mb-12">desde este momento</h3>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
-            {/* Contact Form */}
-            <Card className="bg-white/10 backdrop-blur-sm border-white/20">
-              <CardContent className="p-6">
-                <form action={formAction} className="space-y-6">
-                  <Input
-                    type="text"
-                    name="name"
-                    placeholder="Tu nombre"
-                    required
-                    className="bg-white/20 border-white/30 text-white placeholder:text-white/70"
-                  />
-                  <Input
-                    type="email"
-                    name="email"
-                    placeholder="Tu email"
-                    required
-                    className="bg-white/20 border-white/30 text-white placeholder:text-white/70"
-                  />
-                  <Textarea
-                    name="message"
-                    placeholder="Tu mensaje"
-                    required
-                    rows={4}
-                    className="bg-white/20 border-white/30 text-white placeholder:text-white/70"
-                  />
-                  <Button
-                    type="submit"
-                    disabled={isPending}
-                    className="w-full bg-white text-blue-600 hover:bg-gray-100"
-                  >
-                    {isPending ? "Enviando..." : "Enviar"}
-                  </Button>
-                  {state?.message && (
-                    <p className={`mt-4 text-center ${state.success ? "text-green-300" : "text-red-300"}`}>
-                      {state.message}
-                    </p>
-                  )}
-                </form>
-              </CardContent>
-            </Card>
+    
 
             {/* Contact Info */}
             <div className="text-white space-y-6 text-left lg:text-center">

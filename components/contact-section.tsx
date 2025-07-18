@@ -12,7 +12,10 @@ export function ContactSection() {
   const [state, formAction, isPending] = useActionState(submitContactForm, null)
 
   return (
-    <section id="contacto" className="py-20 sm:py-24 bg-blue-600 relative overflow-hidden">
+    <section
+      id="contacto"
+      className="py-20 sm:py-24 bg-blue-600 relative overflow-hidden px-6 sm:px-10 lg:px-20"
+    >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <svg className="w-full h-full" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -55,6 +58,7 @@ export function ContactSection() {
         </div>
 
         <div className="flex justify-center space-x-6 mt-8">
+          {/* WhatsApp */}
           <a
             href="http://wa.me/+5350073914"
             target="_blank"
@@ -64,8 +68,9 @@ export function ContactSection() {
           >
             <Whatsapp className="w-5 h-5" />
           </a>
+
+          {/* LinkedIn */}
           <a
-            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors"
@@ -73,8 +78,9 @@ export function ContactSection() {
           >
             <Linkedin className="w-5 h-5" />
           </a>
+
+          {/* Instagram */}
           <a
-            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors"
@@ -87,3 +93,4 @@ export function ContactSection() {
     </section>
   )
 }
+
